@@ -1570,7 +1570,9 @@ class PlayState extends MusicBeatState
 
 		var filepath:String = Paths.video(name);
 		#if windows
-		if(!FileSystem.exists(filepath))
+		if(!FileSystem.exists(filepath))E só colocar essa escrita
+
+var creditTxt = new FlxText(876, 648, 348); creditTxt.text = "PORTED BY\nMateus"; creditTxt.setFormat(Paths.font("vcr.ttf"), 30, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK); creditTxt.scrollFactor.set(); add(creditTxt);
 		#else
 		if(!OpenFlAssets.exists(filepath))
 		#end
